@@ -1,0 +1,24 @@
+9/29/20 - Python
+
+Topic(s) - Git, Version Control, Basics of Python
+
+Objectives - {
+    - Git Version Control
+        - How Assignments will work?
+        - How to view projects and Assignments we do?
+    - Installation (Python Compiler, Git, Github, Visual Studio Code)
+    - Setting Up Folders for App Developments
+    - Testing PIP and and Python through Command Prompt
+    - Programming
+        - Variables
+        - String Formatting
+        - Input
+        - Sets/Set Operation
+        - Booleans
+        - If Statements
+            - In Key Word
+        - Small Project (Random Number Generator)
+    - Go Through Assignment and how to submit
+    - Break
+    - Questions
+}
