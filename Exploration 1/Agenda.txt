@@ -3,12 +3,7 @@
 Topic(s) - Git, Version Control, Basics of Python
 
 Objectives - {
-    - Git Version Control
-        - How Assignments will work?
-        - How to view projects and Assignments we do?
-    - Installation (Python Compiler, Git, Github, Visual Studio Code)
-    - Setting Up Folders for App Developments
-    - Testing PIP and and Python through Command Prompt
+    - Configuring Git and Github
     - Programming
         - Variables
         - String Formatting
