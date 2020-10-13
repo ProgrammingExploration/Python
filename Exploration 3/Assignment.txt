@@ -1,0 +1,18 @@
+Part 1)
+1) Get 5 Inputs
+2) Put them all in a set
+3) Print out the set
+4) Remove One value, the value should be input
+5) Ask for another value, add that to the set
+6) Print this set out
+
+Challenge - {
+    Instead of getting strings get integers from the input
+    For loop through the set and print each integer plus 2
+} (Not Mandatory)
+
+Part 2)
+7) Create another set with random values, do not have to be input
+8) Find the difference between them, and print the set out
+9) Find the sum of both of them and print it out
+10) Find what values are in both sets and print that out

@@ -10,7 +10,8 @@ Objectives - {
         - Looping through String
     - Sets
         - Array
-        - Dictionary
         - Sets
         - Tuples
+    - Set Operations
+    - Dictionaries
 }
