@@ -1,0 +1,16 @@
+10/13/20 - Python Course
+
+Topic(s) - If Statements, Loops, Sets
+
+Objectives - {
+    - If Statements
+    - Loops
+        - While Loops
+        - For Loops
+        - Looping through String
+    - Sets
+        - Array
+        - Dictionary
+        - Sets
+        - Tuples
+}
