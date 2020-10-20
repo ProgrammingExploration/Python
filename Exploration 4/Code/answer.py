@@ -23,7 +23,7 @@ i3 = int(input())
 i4 = int(input()) 
 i5 = int(input()) 
 
-d = { i1, i2, i3, i4, i5 }
+d = [i1, i2, i3, i4, i5]
 
 for f in d:
     print(f + 1) 

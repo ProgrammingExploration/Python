@@ -1,6 +1,6 @@
 10/20/20 - Python
 
-Topic(s) - Booleans, While and For Loops, List Comprehension, Dictionaries, Lambda
+Topic(s) - Booleans, While and For Loops, List Comprehension, Dictionaries, Lambda, Keywords
 
 Objectives - {
     - Booleans
@@ -13,6 +13,7 @@ Objectives - {
     - For Loops
     - List Comprehension
         - Lambda
+    - Keywords (In/Is)
     - Variable Comprehension
     - Dictionaries
 }
