@@ -1,0 +1,13 @@
+Part 1
+1) There is going to be a random string
+2) Guessing Game
+    - While Loop
+    - Break Statements
+    - Checking if the user actually wants to play (Y/n)
+    - Print out "You were so close" if the string that they typed in is inside of the guessing string
+        - If the guessing is "Om is awesome"
+        - The person guessed "is"
+        - "You were so close"
+
+Challenge
+1) Create a function that randomizes the string

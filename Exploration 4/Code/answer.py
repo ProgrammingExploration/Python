@@ -32,4 +32,4 @@ for f in d:
 s1 = { 'Om', 'Panda', 'Shivam' }
 print(s1.difference(s))
 print(s1.union(s))
-print(s.intersection(s))
+print(s1.intersection(s))
