@@ -1,0 +1,18 @@
+10/20/20 - Python
+
+Topic(s) - Booleans, While and For Loops, List Comprehension, Dictionaries, Lambda
+
+Objectives - {
+    - Booleans
+        - Operative Booleans
+    - If Statements
+        - Booleans
+        - Operative Booleans
+    - While Loops
+        - Guessing Game
+    - For Loops
+    - List Comprehension
+        - Lambda
+    - Variable Comprehension
+    - Dictionaries
+}

@@ -14,8 +14,6 @@ type(x) # Return Integer <class 'int'>
 
 # Strings
 name = 'Om Panda '
-""
-''
 
 # F String
 print(f'My name is {name}')
@@ -24,14 +22,14 @@ sentence = f'My name is {name}'
 print(sentence)
 
 # String Operations
-print(name + name)
-print(name * 10)
+print(name + name) # Om Panda Om Panda
+print(name * 10) 
 
 # Use a string like an array
 # name = 'Om Panda '
 print(name[0]) # The string characters start at 0
 print(name[0:4]) # The last number is excluded
-print(name[0:6:3]) # The last number is how much it skips
+print(name[0:6:2]) # The last number is how much it skips
 print(name[::-1]) # Reverse Order
 
 # Input
