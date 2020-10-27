@@ -1,0 +1,25 @@
+10/27/20 - Python
+
+Topic(s) - Dictionaries, Destructuring, Functions, Lambda
+
+Objectives - {
+    - Go Over Last Meeting's Assignment
+    - Dictionaries
+        - How they correspond to arrays
+        - JavaScript
+        - Database
+    - Destructuring
+        - Variables
+        - Lists
+        - Maps
+        - Dictionaries
+    - Functions
+        - Basic
+        - Parameters
+        - Calling
+        - Return Keyword
+    - Lambda
+        - What is it?
+        - When is it used?
+        - Syntax
+}
