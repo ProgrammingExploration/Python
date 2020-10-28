@@ -1,9 +1,6 @@
 import random
 
-def randomize(i):
-    return str(i)
-
-n = randomize(random.randint(0, 100))
+n = str(random.randint(0, 100))
 
 while True:
     user_input = input('Do you want to play (Y/n)')

@@ -1,0 +1,6 @@
+1) Create a list of dictionaries with any properties
+2) For Loop Through this list using destructuring
+3) Create a function that will for loop through a list that is a parameter
+    - For Loop through this list
+    - Use Destructuring 
+    - Print Out Whatever

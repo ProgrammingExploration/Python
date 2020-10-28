@@ -1,0 +1,22 @@
+11/3/20 - Python
+
+Topic(s) - Functions, Lambda, Dictionary Destructuring, Classes, Keywords
+
+Objectives - {
+    - Go Over Answer to Last Meeting's Assignment
+    - Finish Functions
+    - Lambda
+        - What is it?
+        - Use Cases 
+    - Dictionary Destructuring
+        - For Loops
+    - Keywords
+        - args
+        - kwargs
+        - Naming Arguments
+    - OOP
+        - How do classes and objects work
+        - SELF
+        - Creating an objects
+        - Constructor (__init__)
+}
