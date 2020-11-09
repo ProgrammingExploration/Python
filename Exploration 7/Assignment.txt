@@ -1,0 +1,10 @@
+Create your own example of OOP
+    - Atleast 3 functions in both classes (Not Including __main__())
+    - Create 2 Instances and show all the functions in action
+    - Class Properties
+    - @staticmethod and @classmethod (Atleast 1)
+    
+Counter
+    - Button with OnClick
+    - Text with Counter Varaible
+    - Not just counter (Counter is: {count}, Counter: {count})

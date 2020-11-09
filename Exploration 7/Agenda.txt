@@ -1,0 +1,22 @@
+11/10/20 - Python
+
+Topic(s) - OOP Inheritance, OOP Example, TKinter Intro
+
+Objectives - {
+    - OOP
+        - Class Inheritance
+        - __main__()
+        - Class functions/properties
+        - Instances (Objects)
+        - Methods from super()
+    - Examples
+        - Vehicle --> Truck
+        - Machine --> Printer
+        - Person --> Student
+    - Tkinter
+        - Modules and Frameworks
+            - import random
+        - Base Templates
+            - User Snippets
+        - Tkinter Application Example
+}
