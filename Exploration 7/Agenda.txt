@@ -4,6 +4,7 @@ Topic(s) - OOP Inheritance, OOP Example, TKinter Intro
 
 Objectives - {
     - OOP
+        - Class Methods/Static Methods
         - Class Inheritance
         - __main__()
         - Class functions/properties
@@ -13,10 +14,16 @@ Objectives - {
         - Vehicle --> Truck
         - Machine --> Printer
         - Person --> Student
+    - Functional Programming
+        - Threads
+        - Server
+        - Difference between OOP and Functional Programming
     - Tkinter
         - Modules and Frameworks
             - import random
         - Base Templates
             - User Snippets
+        - Input Fields
+        - Buttons
         - Tkinter Application Example
 }
