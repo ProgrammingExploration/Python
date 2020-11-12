@@ -1,0 +1,10 @@
+Calculator
+    - Input Field
+        - Switch to Int
+    - Buttons
+        - +
+        - -
+        - *
+        - /
+    - Clear Input after Button Click
+    - Set Input Text to be the answer

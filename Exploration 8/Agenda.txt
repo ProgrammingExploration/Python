@@ -1,0 +1,26 @@
+17/11/20 - Python
+
+Topic(s) - Tkinter Intro, User Snippets, Buttons, Input Fields
+
+Objectives - {
+    - Tkinter Intro
+        - Module
+        - PIP
+            - pip install tkinter
+        - Imports
+            - import tkinter
+        - Base Template
+    - User Snippets (Only VSCODE)
+        - What is User Snippets
+        - Structure
+            - Prefix
+            - Body
+            - Description
+    - Tkinter
+        - Buttons 
+            - Styling
+            - onClick
+        - Input Fields
+            - Getting Text
+            - Setting Text
+}
