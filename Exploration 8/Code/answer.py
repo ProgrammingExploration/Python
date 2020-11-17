@@ -22,13 +22,16 @@ class Truck(Vehicle):
     
     def __str__(self):
         return f'{super().__str__()} and you have {self.money} left'
-    
+
 # Testing
 truck = Truck(300, 500)
 print(truck)
+input()
 truck.drive(20)
 print(truck)
+input()
 truck.sell(200)
 print(truck)
+input()
 truck.buy(300)
 print(truck)
