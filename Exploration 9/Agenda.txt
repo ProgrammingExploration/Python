@@ -1,0 +1,15 @@
+11/24/20 - Python
+
+Topic(s) - Images, Message Boxes, File Dialogs, Drop Downs, Check Boxes, Radio Buttons, Sliders, New Windows
+
+Agenda - {
+    - Solution
+        - Set_Var
+    - Sliders
+    - Radio Buttons
+    - Drop Downs
+    - Images
+    - Message Boxes
+    - File Dialog
+    - New Windows
+}
