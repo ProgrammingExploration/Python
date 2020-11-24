@@ -1,4 +1,3 @@
-# Create Calculator
 from tkinter import *
 
 root = Tk()
@@ -6,10 +5,8 @@ root.title('Calculator')
 root.geometry('300x300')
 
 text = StringVar()
-text.set('')
+text = ''
 
-
-# Enter Widgets Here
 e = Entry(root)
 e.pack()
 
@@ -34,14 +31,16 @@ def answer():
         text.set(str(a / b))
     else:
         text.set('Error, not a valid input')
-    
     e.delete(0, END)
-    
-but = Button(root, text="Sum", command=answer)
-but.pack()
+
+def clear():
+    e.delete(0, END)
+
+Button(root, text="Calculate", command=answer).pack()
+
+Button(root, text="Clear", command=clear).pack()
 
 answer = Label(root, text="Answer", textvariable=text)
 answer.pack()
-
 
 root.mainloop()
