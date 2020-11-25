@@ -1,0 +1,34 @@
+12/1/20 - Python
+
+Topic(s) - Message Boxes, Images, Image View, Frames, Database, Dropdowns, File Dialogs
+
+Agenda - {
+    - Dropdowns
+    - Message Boxes
+        - Basics
+            - showinfo
+            - showwarning
+            - showerror
+            - askquestion
+            - askokcancel
+            - askyesno
+        - Handling Buttons
+    - Images
+        - Displaying Images
+        - Image Views
+    - Frames
+    - File Dialogs
+        - Getting and Displaying Image
+    - Databases
+        - Creating in-file Databases
+        - Input Fields
+        - Submit Button
+        - Query Button
+        - Submit Function
+            - Get Input Field
+            - Storing Data
+            - Save()
+        - Query Function
+            - Query
+            - String Variable
+}
