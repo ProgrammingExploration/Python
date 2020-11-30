@@ -1,4 +1,4 @@
-12/1 - Python
+12/8/20 - Python
 
 Topic(s) - Setup, REST API, Servers, Base Template, Creating Routes, Requests [GET, POST, PUT, PATCH, DELETE]
 

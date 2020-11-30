@@ -1,4 +1,4 @@
-12/8 - Python
+12/15/20 - Python
 
 Topic(s) - Youtube API, SQLite, Database Basic Queries
 
