@@ -1,0 +1,13 @@
+Store API
+    - One store with items to sell
+        - List and Dictionaries
+    - Get Request getting all items in store
+    - Get specific item
+        - Search Query
+    - Create item
+        - Use Request Handling
+        - Error Handling
+            - Not made fields
+            - Empty fields
+            - Send Error Message
+        - Send new Item if succeeded in creating item

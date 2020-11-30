@@ -1,0 +1,45 @@
+12/1 - Python
+
+Topic(s) - Setup, REST API, Servers, Base Template, Creating Routes, Requests [GET, POST, PUT, PATCH, DELETE]
+
+Agenda - {
+    - Setup
+        - pip install flask
+        - ENV
+    - REST APIs vs Servers
+        - Modern Day Servers
+            - Twitter
+            - Facebook
+        - Original Servers
+            - Hangouts
+    - Intro to Flask
+        - Base Template
+            - from flask import Flask
+            - __name__
+                - Already made variable by Python
+                - File name and information
+                - Checking File
+        - Creating Routes
+            - Methods
+                - GET
+                - POST
+                - PUT
+                - PATCH
+                - DELETE
+            - Functional Method
+                - @route()
+                - def home():
+                    - return ()
+            - JSON
+                - Object Notation
+    - Templates
+        - HTML
+            - Basic Tags (h1, p, a, img)
+        - Rendering Templates on Route
+    - Recieving Data
+        - using url
+        - request information
+    - POSTMAN
+        - Install
+        - Setup
+}
