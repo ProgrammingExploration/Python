@@ -25,22 +25,13 @@ drop.pack()
 Label(root, text=str(drop_value.get()), textvariable=drop_value).pack()
 
 def show():
-    res = messagebox.askyesno("Popup", "Hello World")
+    res = messagebox.askquestion("Popup", "Hello World")
+    print(res)
 
 Button(root, text="Show", command=show).pack()
 
-root.filename = filedialog.askopenfilename(initialdir="/", title="Select Image",
-                                           filetype=[("PNG File", "*.png"), ("All Files", "*.*")])
-img = ImageTk.PhotoImage(Image.open(root.filename))
+# root.filename = filedialog.askopenfilename(initialdir="/", title="Select Image",
+#                                            filetype=[("PNG File", "*.png"), ("All Files", "*.*")])
+# img = ImageTk.PhotoImage(Image.open(root.filename))
 
-Label(image=img).pack()
-
-def create():
-    new = Toplevel()
-    new.title('Hi')
-    new.geometry('400x400')
-    Button(new, text="Destroy", command=new.destroy).pack()
-
-Button(root, text="Create new Window", command=create).pack()
-
-root.mainloop()
+# Label(image=img).pack()

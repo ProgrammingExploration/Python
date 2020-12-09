@@ -3,6 +3,22 @@ from tkinter import *
 root = Tk()
 root.title("Tkinter Advanced")
 
+input = StringVar()
+input.set('')
+
+t = StringVar()
+
+Entry(root, textvariable=input).pack()
+
+def get_input():
+    print(input.get())
+    input.set('')
+    t.set('Input has been taken')
+
+Button(root, text="Get", command=get_input).pack()
+
+Label(root, text="", textvariable=t).pack()
+
 x = IntVar()
 y = IntVar()
 
@@ -14,21 +30,22 @@ def c():
 
 Button(root, text="Print", command=c).pack()
 
+MODES = [
+    "Taco Bell",
+    "McDonalds",
+    "Burger King",
+    "Subway",
+    "Chipotle"
+]
+
 r = StringVar()
-r.set('Taco Bell')
+r.set(MODES[0])
 
 text = StringVar()
 text.set('')
 
 def select():
     text.set(f'You chose {r.get()}')
-
-MODES = [
-    "Taco Bell",
-    "McDonalds",
-    "Burger King",
-    "Subway"
-]
 
 for mode in MODES:
     Radiobutton(root, text=mode, variable=r, value=mode).pack()

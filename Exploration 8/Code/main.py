@@ -3,8 +3,8 @@ from tkinter import *
 # Create Instance
 root = Tk()
 root.title('Hello')
-root.geometry('400x400')
 
+# Widgets
 input = Entry(root, width=50, borderwidth=5)
 input.pack()
 
@@ -24,9 +24,8 @@ def click():
         l.pack()
 
 label = Label(root, text="Hello World")
-label.grid(row=0, column=2, columnspan=3, rowspan=4)
+label.pack()
 
-button = Button(root, text="Button", command=click, fg="yellow", bg="red")
-button.pack()
+Button(root, text="Button", command=click, fg="yellow", bg="red").pack()
 
 root.mainloop()
