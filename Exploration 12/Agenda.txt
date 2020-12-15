@@ -5,7 +5,9 @@ Topic(s) - Youtube API, SQLite, Database Basic Queries
 Agenda - {
     - Imports
         - Flask_Restful
-        - Flask_SQLalchemy
+        - Flask_SQLalchem
+        - requirements.txt
+        - pip install -r requirements.txt
     - Youtube API
         - Creating API
             - Class
@@ -26,4 +28,9 @@ Agenda - {
         - Updating Video (Liking)
             - PATCH
             - Args -> Interface.Parsing
+    - Testing
+        - pip install requests
+        - URL
+        - POST/PUT/GET/DELETE requests
+        - Building Application
 }
