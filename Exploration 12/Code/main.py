@@ -1,23 +1,45 @@
-from flask import Flask, jsonify
-from flask_restful import Api, Resource
+from flask import Flask
+from flask_restful import Api, Resource, fields, marshal_with, reqparse
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 api = Api(app)
-app.config['SQLALCHEMY_DATABASE_URL'] = 'sqlite://database.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.sqlite3'
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+
 db = SQLAlchemy(app)
 
-@app.route('/')
-def home():
-    return 'Hi'
+class UserModel(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(200), nullable=False)
+
+    def __repr__(self):
+        return f'User with id: {self.id}'
+
+user_create_args = reqparse.RequestParser()
+user_create_args.add_argument('id', type=int, required=True)
+user_create_args.add_argument('name', type=str, required=True)
+
+resource_fields = {
+    'id': fields.Integer,
+    'name': fields.String
+}
 
 class Home(Resource):
-    def get(self):
-        return '<h1>Youtube API</h1>'
+    @marshal_with(resource_fields)
+    def get(self, id):
+        things = UserModel.query.filter_by().first()
+        return things
     
-    def post(self):
-        return "<h1>Post Request</h1>"
-
-api.add_resource(Home, '/home')
+    @marshal_with(resource_fields)
+    def post(self, id):
+        args = user_create_args.parse_args()
+        print(args)
+        user = UserModel(id=id, name=args['name'])
+        db.session.add(user)
+        db.session.commit()
+        return '<h1>Successfully Added Data</h1>'
+    
+api.add_resource(Home, '/<int:id>')
 
 app.run(port=5000)
