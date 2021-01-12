@@ -17,8 +17,8 @@ class UserModel(db.Model):
         return f'User with id: {self.id}'
 
 user_create_args = reqparse.RequestParser()
-user_create_args.add_argument('id', type=int, required=True)
-user_create_args.add_argument('name', type=str, required=True)
+user_create_args.add_argument('id', type=int, required=False)
+user_create_args.add_argument('name', type=str, required=False)
 
 resource_fields = {
     'id': fields.Integer,
@@ -28,18 +28,24 @@ resource_fields = {
 class Home(Resource):
     @marshal_with(resource_fields)
     def get(self, id):
-        things = UserModel.query.filter_by().first()
-        return things
-    
+        data = UserModel.query.get(id)
+        print(data)
+        if data == None:
+            data = UserModel.query.all()
+            return data
+            # return f'User with {id} does not exist' (Does not work with Marshall With)
+        else:
+            return data
+
     @marshal_with(resource_fields)
     def post(self, id):
         args = user_create_args.parse_args()
-        print(args)
-        user = UserModel(id=id, name=args['name'])
+        user = UserModel(name=args['name'])
         db.session.add(user)
         db.session.commit()
-        return '<h1>Successfully Added Data</h1>'
+        return user
     
 api.add_resource(Home, '/<int:id>')
 
-app.run(port=5000)
+if __name__ == '__main__':
+    app.run(port=5000)

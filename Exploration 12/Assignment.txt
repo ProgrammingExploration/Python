@@ -1,0 +1,11 @@
+Add a Try Except
+    - If it works send back the user
+    - If it doesn't work send a string for error
+
+Create some other model
+    - Atleast 3 Fields
+    - POST, GET
+        - Create model
+        - Get Model by ID
+            - Try Except
+        - Get All Models
