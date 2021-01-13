@@ -26,15 +26,24 @@ resource_fields = {
 }
 
 class Home(Resource):
+    # @marshal_with(resource_fields)
+    # def get(self, id):
+    #     data = UserModel.query.get(id)
+    #     print(data)
+    #     if data == None:
+    #         data = UserModel.query.all()
+    #         return data
+    #         # return f'User with {id} does not exist' (Does not work with Marshall With)
+    #     else:
+    #         return data
+
     @marshal_with(resource_fields)
     def get(self, id):
-        data = UserModel.query.get(id)
-        print(data)
-        if data == None:
-            data = UserModel.query.all()
+        try:
+            data = UserModel.query.get(id)
             return data
-            # return f'User with {id} does not exist' (Does not work with Marshall With)
-        else:
+        except:
+            data = UserModel.query.all()
             return data
 
     @marshal_with(resource_fields)
