@@ -1,0 +1,26 @@
+1/26 - Python
+
+Topic(s) - Youtube Clone API
+
+Agenda - {
+    - Init
+    - Schema
+    - Models
+        - Likes
+        - Views
+        - Title
+        - Created At
+        - Video_URL
+    - Methods
+        - GET
+            - Get All
+            - Get by Title
+            - Get By ID
+        - POST
+            - Create Video
+        - Patch
+            - Change Title
+            - Like / Dislike
+            - View Video
+            - If Video does not exist, 404
+}
