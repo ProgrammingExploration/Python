@@ -1,7 +1,9 @@
 Create some other model
     - Atleast 3 Fields
-    - POST, GET
+    - POST, GET, PATCH
         - Create model
         - Get Model by ID
-            - Try Except
+        - Get All Models with a certain attribute (OPTIONAL)
         - Get All Models
+        - Given an ID and your Fields change the model that was at the ID
+            - Create a new model with a new ID if the model that the user was updating does not exist (OPTIONAL)

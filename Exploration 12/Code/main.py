@@ -1,5 +1,5 @@
 from flask import Flask
-from flask_restful import Api, Resource, fields, marshal_with, reqparse
+from flask_restful import Api, Resource, abort, fields, marshal_with, reqparse
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -26,24 +26,14 @@ resource_fields = {
 }
 
 class Home(Resource):
-    # @marshal_with(resource_fields)
-    # def get(self, id):
-    #     data = UserModel.query.get(id)
-    #     print(data)
-    #     if data == None:
-    #         data = UserModel.query.all()
-    #         return data
-    #         # return f'User with {id} does not exist' (Does not work with Marshall With)
-    #     else:
-    #         return data
-
     @marshal_with(resource_fields)
     def get(self, id):
-        try:
-            data = UserModel.query.get(id)
-            return data
-        except:
+        data = UserModel.query.get(id)
+        if data == None:
             data = UserModel.query.all()
+            return data
+            # return f'User with {id} does not exist' (Does not work with Marshall With)
+        else:
             return data
 
     @marshal_with(resource_fields)
@@ -53,7 +43,15 @@ class Home(Resource):
         db.session.add(user)
         db.session.commit()
         return user
-    
+
+    @marshal_with(resource_fields)
+    def patch(self, id):
+        args = user_create_args.parse_args()
+        updated = UserModel.query.filter_by(id=id).update(dict(name=args['name']))
+        db.session.commit()
+        user = UserModel.query.filter_by(id=id).first()
+        return user
+
 api.add_resource(Home, '/<int:id>')
 
 if __name__ == '__main__':
