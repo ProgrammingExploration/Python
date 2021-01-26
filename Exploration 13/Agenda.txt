@@ -9,7 +9,6 @@ Agenda - {
         - Likes
         - Views
         - Title
-        - Created At
         - Video_URL
     - Methods
         - GET
