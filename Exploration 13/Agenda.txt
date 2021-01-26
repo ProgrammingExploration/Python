@@ -23,4 +23,13 @@ Agenda - {
             - Like / Dislike
             - View Video
             - If Video does not exist, 404
+    - Server
+        - https://www.geeksforgeeks.org/socket-programming-python/
+        - Socket Programming
+            - import socket
+            - IP Address
+            - Ports
+        - While Loops
+        - Sending Data
+        - Recieving Data
 }
