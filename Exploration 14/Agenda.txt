@@ -1,0 +1,30 @@
+2/2 - Python
+
+Topic(s) - Server, Sending and Receiving Data
+
+Agenda - {
+    - Socket, Threading
+        - Socket: Server Init
+        - Threading: Handling Events (ASYNC)
+    - Socket Initialization
+        - HEADER, PORT, SERVER, ADDR, FORMAT
+            - SERVER = .gethostbyname() && .gethostname()
+        - Server variable
+            - socket.AF_INET: Connection Type
+            - socket.SOCK_STREAM: Server Type
+            - server.bind(): Initialization
+    - Start()
+        - server.listen()
+        - While Loop
+            - Connection, Addresses
+            - Handle Client()
+            - Creating Thread
+    - Handle Client()
+        - Getting Connection and Addresses
+        - While Loop
+            - Data Format
+                - Length of Data
+                - Data
+            - Print Data
+        - conn.close()
+}
