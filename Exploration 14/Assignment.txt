@@ -1,0 +1,3 @@
+Build on what already exists (While Loop Application)
+    - While Loop asking to quit or to continue sending messages
+    - If quit, make sure to send the Disconnect Message

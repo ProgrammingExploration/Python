@@ -1,6 +1,6 @@
 2/2 - Python
 
-Topic(s) - Server, Sending and Receiving Data
+Topic(s) - Server, Sending (Client) and Receiving Data
 
 Agenda - {
     - Socket, Threading
