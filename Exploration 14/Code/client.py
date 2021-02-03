@@ -18,8 +18,14 @@ def send(msg):
     client.send(send_len)
     client.send(message)
 
-msg = input('Message: ')
-send(msg)
-input()
-input('Leaving Server')
-send(DISCONNECT_MESSAGE)
+def leave():
+    send(DISCONNECT_MESSAGE)
+
+while True:
+    f = input('Do you want to connect? ')
+    if f.lower() == 'n':
+        leave()
+        break
+    msg = input('Message: ')
+    send(msg)
+    print('Message Sent')
