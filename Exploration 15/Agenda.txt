@@ -1,0 +1,20 @@
+2/8/21 - Python Optional
+
+Topic(s) - Django, Templates, Routing
+
+Agenda - {
+    - Creating Environment
+        - python -m venv ./
+        - .\env\Scripts\activate
+        - django-admin startproject sample
+        - python manage.py runserver
+        - python manage.py startapp app
+        - def home(request)
+    - app.views.py
+        - def home(request):
+        - from django.http import HttpRequest()
+        - return HttpRequest('')
+        - render()
+        - app.py
+        - settings.py adding apps
+}
